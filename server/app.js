@@ -18,7 +18,8 @@ app.use(express.json());
 //   next();
 // });
 
-const DB_URL = process.env.DB.replace("<password>", process.env.DB_PASS);
+// const DB_URL = process.env.DB.replace("<password>", process.env.DB_PASS);
+const DB_URL = process.env.DB;
 mongoose.connect(
   // "mongodb://localhost/whatsappDB",
   DB_URL,
